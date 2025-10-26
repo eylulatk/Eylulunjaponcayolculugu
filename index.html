@@ -2,7 +2,14 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>html
-<img src="logo.png" alt="Logo" style="height: 90px; margin-bottom: 20px;">
+<script>
+  let titles = ["Eylül’ün Japonca Günlüğü", "ようこそ", "静けさの中に美がある"];
+  let index = 0;
+  setInterval(() => {
+    document.title = titles[index];
+    index = (index + 1) % titles.length;
+  }, 3000);
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eylül'ün Japonca Yolculuğu</title>
@@ -43,7 +50,9 @@
       margin-bottom: 10px;
     }
 
-    header p {
+    header p html
+<img src="logo.png" alt="Logo" style="height: 90px; margin-bottom: 20px;">
+
       font-size: 1.2em;
       color: #5a5a5a;
     }
