@@ -1,123 +1,186 @@
-[18:30, 10/26/2025] ChatGPT: ```html  
+[01:12, 10/27/2025] ChatGPT: ```html
 <!DOCTYPE html>
 <html lang="tr">
-<head>html
-<script>
-  let titles = ["Eylül’ün Japonca Günlüğü", "ようこそ", "静けさの中に美がある"];
-  let index = 0;
-  setInterval(() => {
-    document.title = titles[index];
-    index = (index + 1) % titles.length;
-  }, 3000);
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eylül'ün Japonca Yolculuğu</title>
-  <style> html
-<div class="corner-note">「静けさの中に美がある」</div>
-
-    * {
-      box-sizing: border-box;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eylül’ün Japonya Günlüğü</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
       margin: 0;
       padding: 0;
-    }
-
-    body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f1ea;
-      color: #2e2e2e;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
+      background-color: #f5f0eb;
+      color: #333;
     }
-
     header {
+      background-color: #dce7f5;
+      padding: 40px 20px;
       text-align: center;
-      background-color: #e1e8ef;
-      padding: 40px;
-      border-radius: 15px;
-      width: 100%;
-      max-width: 800px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-
     header h1 {
-      font-size: 2.5em;
+      margin: 0;
+      color: #2f4f66;
+    }
+    nav {
+      background-color: #e9ecef;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
       color: #375a7f;
-      margin-bottom: 10px;
+      font-weight: bold;
     }
-
-    header p html
-<img src="logo.png" alt="Logo" style="height: 90px; margin-bottom: 20px;">
-
-      font-size: 1.2em;
-      color: #5a5a5a;
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-
+[01:12, 10/27/2025] ChatGPT: .main {
+      flex: 2;
+      min-width: 280px;
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 200px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
     .post {
       background-color: #ffffff;
-      padding: 25px;
-      border-radius: 12px;
-[18:30, 10/26/2025] ChatGPT: box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      margin-bottom: 25px;
-      width: 100%;
-      max-width: 800px;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-
-    .post .date {
-      color: #888;
-      font-size: 0.9em;
-      margin-bottom: 5px;
-    }
-
     .post h2 {
-      color: #375a7f;
+      color: #2a3d4e;
+    }
+    .post .date {
+      font-size: 13px;
+      color: #888;
       margin-bottom: 10px;
     }
-
-    footer {
-      margin-top: 40px;
-      color: #666;
-      font-size: 0.9em;
-    }
-
-    .email {
-      margin-top: 10px;
-      font-size: 0.95em;
+    .post .category {
+      font-size: 12px;
+      background-color: #dce7f5;
       color: #375a7f;
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+    .corner-note {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      font-size: 13px;
+      color: #4d4d4d;
+      font-style: italic;
+      font-family: Georgia, serif;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 6px 12px;
+      border-left: 3px solid #375a7f;
+      border-radius: 4px;
+      opacity: 0.7;
+    }
+    @media (max-width: 768px) {
+      .container {
+[01:12, 10/27/2025] ChatGPT: flex-direction: column;
+      }
     }
   </style>
+  <script>
+    let titles = ["Eylül’ün Japonya Günlüğü", "ようこそ", "静けさの中に美がある"];
+    let index = 0;
+    setInterval(() => {
+      document.title = titles[index];
+      index = (index + 1) % titles.length;
+    }, 3000);
+  </script>
 </head>
 <body>
 
-  <header>
-    <h1>Hoş Geldiniz</h1>
-    <p>Bu blog, Japonca öğrenme serüvenimi paylaşmak için hazırlandı.</p>
-  </header>
+<header>
+  <h1>Hoş Geldiniz</h1>
+  <p>Japonca öğrenme ve kültür keşif yolculuğuma ortak olun!</p>
+</header>
 
-  <div class="post">
-    <div class="date">26 Ekim 2025</div>
-    <h2>İlk Adım</h2>
-    <p>Bugün Japonca'ya başladım. Hiragana harfleriyle ilk tanışmamı yaşadım. Zor ama keyifli olacak gibi.</p>
+<nav>
+  <a href="#">Anasayfa</a>
+  <a href="#">Hakkımda</a>
+  <a href="#">Yazılar</a>
+  <a href="#">İletişim</a>
+</nav>
+
+<div class="container">
+  <div class="main">
+
+    <div class="post">
+      <div class="category">#Hiragana</div>
+      <div class="date">26 Ekim 2025</div>
+      <h2>İlk Adım</h2>
+      <p>Bugün Japonca'ya başladım. Hiragana harfleriyle tanıştım. Zor ama keyifli olacak gibi.</p>
+    </div>
+
+    <div class="post">
+      <div class="category">#Katakana</div>
+      <div class="date">27 Ekim 2025</div>
+      <h2>Katakana’ya Giriş</h2>
+      <p>Katakana daha keskin ve farklı görünüyor. Yazarken eğlenceli!</p>
+    </div>
+
+    <div class="post">
+      <div class="category">#Kültür</div>
+      <div class="date">28 Ekim 2025</div>
+      <h2>Japonya'da Sessizlik</h2>
+      <p>Japon kültüründe sessizlik çok önemli. Bugün bu konuyla ilgili bir belgesel izledim.</p>
+[01:12, 10/27/2025] ChatGPT: </div>
+
   </div>
 
-  <div class="post">
-    <div class="date">27 Ekim 2025</div>
-    <h2>Katakana’ya Giriş</h2>
-    <p>Katakana biraz daha keskin şekilli ama yazması eğlenceli. Bugün birkaç kelime yazmayı denedim!</p>
+  <div class="sidebar">
+    <h3>Kategoriler</h3>
+    <ul>
+      <li>Hiragana</li>
+      <li>Katakana</li>
+      <li>Kültür</li>
+      <li>Günlük Notlar</li>
+    </ul>
+
+    <h3 style="margin-top: 20px;">Arşiv</h3>
+    <ul>
+      <li>Ekim 2025</li>
+      <li>Kasım 2025</li>
+    </ul>
+
+    <h3 style="margin-top: 20px;">İletişim</h3>
+    <p>ey_0018@hotmail.com</p>
   </div>
+</div>
 
-  <footer>
-    <p>İletişim: <span class="email">ey_0018@hotmail.com</span></p>
-  </footer>
+<footer>
+  © 2025 Eylül’ün Japonya Günlüğü — Tüm hakları saklıdır.
+</footer>
 
-</body>html
 <div class="corner-note">「静けさの中に美がある」</div>
 
-  
-  
+</body>
 </html>
-```  
+```
+
+---
